@@ -14,7 +14,7 @@ User Story: I can see changes in real-time when any other user adds or removes a
 
 
 ## View Project
-[View live demo of Chart the Stock Market](https://afternoon-sea-48444.herokuapp.com/)
+[View live demo of Chart the Stock Market](https://obscure-dusk-43191.herokuapp.com/)
 
 ## Technologies
 MEAN Stack - MongoDB, Express, Angular (1.6.4), Node.JS
