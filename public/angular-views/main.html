@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="chart-display">
+    <h4 class="text-center">Stocks</h4>
+    <div class="temp">
+      <canvas id="line" class="chart chart-line" chart-data="data"
+        chart-labels="labels" chart-series="series" chart-options="options"
+        chart-dataset-override="datasetOverride" chart-click="onClick" style="max-height: 400px;  overflow: scroll;">
+        </canvas>
+    </div>
+    <div class="stock-symbol-controls-displays">
+      <div class="item-container">
+        <div class="item-inner">
+          <div class="item">
+            <label for="stockText">Syncs in realtime across clients</label>
+            <div class="input-group">
+              <input type="text" class="form-control" ng-model="symbol" id="stockText" placeholder="Enter a stock symbol">
+              <span class="input-group-btn">
+                <button class="btn btn-success" ng-click="addStock()" type="button">Add</button>
+              </span>
+            </div>
+            <!-- /input-group -->
+            <div ng-show="message" class="alert alert-danger">
+              <p><small>You need to enter a stock symbol before searching.</small></p>
+            </div>
+            <div ng-show="error" class="alert alert-danger">
+              <p><small>Error: Quandl API returned no results for your stock symbol search.</small></p>
+            </div>
+             <div ng-show="loading" class="alert alert-warning">
+              <p><small>Fetching data....</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="item-container" ng-repeat="stock in stocks">
+        <div class="item-inner">
+          <div class="item-results">
+            <h3>{{stock.dataset_code}}
+              <button type="button" class="close" ng-click="delete($index)" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+            </h3>
+            <p class="muted">{{stock.name}}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

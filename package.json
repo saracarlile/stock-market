@@ -1,0 +1,23 @@
+{
+  "name": "socket-io-stock-market",
+  "version": "1.0.0",
+  "description": "my first socket.io app",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "angular-chart.js": "^1.1.1",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "mongodb": "^2.2.28",
+    "mongoose": "^4.10.7",
+    "morgan": "~1.8.1",
+    "request": "^2.81.0",
+    "serve-favicon": "~2.4.2",
+    "socket.io": "^2.0.3"
+  }
+}

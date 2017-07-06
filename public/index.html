@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chart the Stock Market</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <script src="/javascripts/vendor/angular.min.js"></script>
+    <script src="/javascripts/vendor/angular-route.min.js"></script>
+    <script src="/javascripts/vendor/Chart.min.js"></script>
+    <script src="/javascripts/vendor/angular-chart.min.js"></script> 
+    <script src="/javascripts/vendor/socket.io.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+  <body ng-app="stockMarketApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div class="container top">
+    <div ng-view=""></div>
+    </div>
+
+      <div class="container-fluid footer">
+        <p>Powered by the <a href="https://docs.quandl.com/">Quandl API</a></p>
+        <p class="footer-p">Code available on <a href="https://github.com/saracarlile/stock-market-web-sockets">Github</a></p>
+      </div>
+
+
+
+         <script src="/javascripts/vendor/socket.io.js"></script>
+        <script src="/javascripts/scripts/app.js"></script>
+        <script src="/javascripts/scripts/controllers/main.js"></script>
+        <script src="/javascripts/scripts/controllers/about.js"></script>
+       
+</body>
+</html>
